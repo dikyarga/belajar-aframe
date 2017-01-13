@@ -3,10 +3,37 @@
   <head>
     <meta charset="utf-8">
     <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
     <title>Belajar A-Frame</title>
   </head>
   <body>
-    
-
+    <a-scene>
+      <a-assets>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <img id="skyTexture"
+          src="https://raw.githubusercontent.com/dikyarga/belajar-aframe/master/images/panorama-smk-telkom-malang.jpeg">
+          <a-asset-item id="shoe-obj" src="3d/converse_obj.obj"></a-asset-item>
+          <a-asset-item id="shoe-mtl" src="3d/converse_obj.mtl"></a-asset-item>
+      </a-assets>
+       <!-- <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+         <a-animation attribute="position" to="0 3 -5" direction="alternate" dur="2000"
+        repeat="indefinite"></a-animation>
+      </a-box> -->
+        <a-obj-model src="#shoe-obj" mtl="#shoe-mtl" position="-5 0 -2" rotation="0 0 0" scale="0.1 0.1 0.1">
+          <a-animation attribute="position" to="-5 2 -2" direction="alternate" dur="2000"
+         repeat="indefinite"></a-animation>
+        </a-obj-model>
+          <a-entity color="red" bmfont-text="text: Sepatu Sneaker - Rp. 250.000,-" position="-5 -0.5 -2" rotation="0 30 0" scale="2 2 2"></a-entity>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+    <script>
+      var boxEl = document.querySelector('a-box')
+      boxEl.addEventListener('mouseenter', function () {
+        boxEl.setAttribute('scale', {x: 2, y: 2: z: 2});
+      });
+    </script>
   </body>
 </html>
