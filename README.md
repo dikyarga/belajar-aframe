@@ -1,4 +1,4 @@
-# belajar-aframe / Learn A-frame
+# Belajar-aframe / Learn A-Frame
 Belajar / Learn [A-Frame](http://aframe.io/)
 
 Dokumentasi lengkapnya / Complete Documentation : [Aframe Docs](http://aframe.io/docs/)
