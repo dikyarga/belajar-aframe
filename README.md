@@ -10,6 +10,6 @@ Materi / Slide deck of my presentation about getting start with A-Frame : https:
 
 
 ## Todo
-
+- Create Demo content
 - Integrate with [RevealJS](https://github.com/hakimel/reveal.js) or from downloaded file from Slides.com
 - Add realtime feature through WebSocket using Socket.IO
