@@ -16,7 +16,7 @@ Materi / Slide deck of my presentation about getting start with A-Frame : https:
 
 
 ## Demo flow
-- Show basic hello world A-Frame
+- Show basic hello world A-Frame [demo](https://aframe.io/examples/showcase/helloworld/)
 - Explain what's the component inside the demo (like background < a-scene > etc)
 - Move some element to explain how XYZ axis work
 - Sample code of one element (< a-box >)
