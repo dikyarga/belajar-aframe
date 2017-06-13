@@ -11,19 +11,24 @@
       <a-assets>
         <img id="boxTexture" src="images/guidelines-logo.png">
         <img id="skyTexture"
-          src="images/FOSSASIA.JPG">
+          src="images/panorama-smk-telkom-malang.jpeg">
           <a-asset-item id="shoe-obj" src="3d/converse_obj.obj"></a-asset-item>
           <a-asset-item id="shoe-mtl" src="3d/converse_obj.mtl"></a-asset-item>
+
+          <a-asset-item id="tree-obj" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.obj"></a-asset-item>
+          <a-asset-item id="tree-mtl" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.mtl"></a-asset-item>
       </a-assets>
+      <!-- <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot> -->
        <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
          <a-animation attribute="position" to="0 3 -5" direction="alternate" dur="2000"
         repeat="indefinite"></a-animation>
       </a-box>
+        <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-3 -2 -9" scale="0.05 0.05 0.05"></a-entity>
         <!-- <a-obj-model src="#shoe-obj" mtl="#shoe-mtl" position="-5 0 -2" rotation="0 30 0" scale="0.1 0.1 0.1">
           <a-animation attribute="position" to="-5 2 -2" direction="alternate" dur="2000"
          repeat="indefinite"></a-animation>
         </a-obj-model> -->
-          <a-entity bmfont-text="text: FOSS Asia, photo by Valentine" position="-5 -0.2 -1" rotation="0 30 0" scale="2 2 2"></a-entity>
+          <a-entity bmfont-text="text: Ganteng-ganteng Srigala :D" position="0 0 -5" rotation="0 0 0" scale="2 2 2"></a-entity>
       <a-sky src="#skyTexture"></a-sky>
       <a-camera>
         <a-cursor></a-cursor>
