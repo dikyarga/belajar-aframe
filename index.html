@@ -16,6 +16,7 @@
           src="images/panorama-smk-telkom-malang.jpeg">
           <img id="shadow2" src="images/radial-shadow-2.png">
           <img id="shoes" src="images/shoes.png">
+          <img id="bukawebvr" src="images/bukawebvr.png">
           <a-asset-item id="shoe-obj" src="3d/converse_obj.obj"></a-asset-item>
           <a-asset-item id="shoe-mtl" src="3d/converse_obj.mtl"></a-asset-item>
 
@@ -29,6 +30,11 @@
                            src="#why-male-models"></a-collada-model>
           <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
       </a-entity>
+      <a-curvedimage id="mozvr-logo" src="#bukawebvr" radius="5.7" theta-length="36" height="1"
+            position="0 2.6 -1" opacity="1">
+      <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500"
+            dur="1000"></a-animation>
+      </a-curvedimage>
       <!-- <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot> -->
        <a-box src="#boxTexture" position="-5 2 -10" rotation="0 45 45" scale="2 2 2">
          <a-animation attribute="position" to="-5 3 -10" direction="alternate" dur="2000"
