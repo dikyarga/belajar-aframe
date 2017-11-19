@@ -1,75 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
-    <title>Belajar A-Frame</title>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <a-asset-item id="why-male-models" src="3d/man/man.dae"></a-asset-item>
-        <img id="boxTexture" src="images/guidelines-logo.png">
-        <img id="earthSurface" src="images/Day_lrg.jpg">
-        <img id="skyTexture"
-          src="images/panorama-smk-telkom-malang.jpeg">
-          <img id="shadow2" src="images/radial-shadow-2.png">
-          <img id="shoes" src="images/shoes.png">
-          <img id="bukawebvr" src="images/bukawebvr.png">
-          <a-asset-item id="shoe-obj" src="3d/converse_obj.obj"></a-asset-item>
-          <a-asset-item id="shoe-mtl" src="3d/converse_obj.mtl"></a-asset-item>
 
-          <a-asset-item id="tree-obj" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.obj"></a-asset-item>
-          <a-asset-item id="tree-mtl" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.mtl"></a-asset-item>
-      </a-assets>
-      <a-entity id="model" position="0 0 -3">
-          <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
-                       easing="linear" repeat="indefinite"></a-animation>
-          <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5"
-                           src="#why-male-models"></a-collada-model>
-          <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
-      </a-entity>
-      <a-curvedimage id="mozvr-logo" src="#bukawebvr" radius="5.7" theta-length="36" height="1"
-            position="0 2.6 -1" opacity="1">
-      <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500"
-            dur="1000"></a-animation>
-      </a-curvedimage>
-      <!-- <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot> -->
-       <a-box src="#boxTexture" position="-5 2 -10" rotation="0 45 45" scale="2 2 2">
-         <a-animation attribute="position" to="-5 3 -10" direction="alternate" dur="2000"
-        repeat="indefinite"></a-animation>
-      </a-box>
-      <a-entity>
-          <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true"
-                      color="#FFF"></a-cylinder>
-      </a-entity>
-        <a-sphere position="5 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-sphere position="5 1.25 -5" radius="1.25" scale="2 2 2" src="#earthSurface"></a-sphere>
-        <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
-        <!-- <a-circle color="#CCC" radius="20"  position="0 2 -5" rotation="0 45 45" scale="0.1 0.1 0.1"></a-circle> -->
-        <!-- <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-3 -2 -9" scale="0.05 0.05 0.05"></a-entity> -->
-        <!-- <a-obj-model src="#shoe-obj" mtl="#shoe-mtl" position="-5 0 -2" rotation="0 30 0" scale="0.1 0.1 0.1">
+<head>
+  <meta charset="utf-8">
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+  <title>Belajar A-Frame</title>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="why-male-models" src="3d/man/man.dae"></a-asset-item>
+      <img id="boxTexture" src="images/guidelines-logo.png">
+      <img id="earthSurface" src="images/Day_lrg.jpg">
+      <img id="skyTexture" src="dpr-dibawah-pohon-rindang-udinus.jpg">
+      <img id="shadow2" src="images/radial-shadow-2.png">
+      <img id="shoes" src="images/shoes.png">
+      <img id="bukawebvr" src="images/bukawebvr.png">
+      <a-asset-item id="shoe-obj" src="3d/converse_obj.obj"></a-asset-item>
+      <a-asset-item id="shoe-mtl" src="3d/converse_obj.mtl"></a-asset-item>
+
+      <a-asset-item id="tree-obj" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.obj"></a-asset-item>
+      <a-asset-item id="tree-mtl" src="3d/low-poly-fox-by-pixelmannen-obj/low-poly-fox-by-pixelmannen.mtl"></a-asset-item>
+    </a-assets>
+    <a-entity id="model" position="0 0 -3">
+      <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="indefinite"></a-animation>
+      <a-collada-model position="-.35 0 .55" rotation="0 -20 0" scale="1.5 1.5 1.5" src="#why-male-models"></a-collada-model>
+      <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
+    </a-entity>
+    <a-curvedimage id="mozvr-logo" src="#bukawebvr" radius="5.7" theta-length="36" height="1" position="0 2.6 -1" opacity="1">
+      <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500" dur="1000"></a-animation>
+    </a-curvedimage>
+    <!-- <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot> -->
+    <a-box src="#boxTexture" position="-5 2 -10" rotation="0 45 45" scale="2 2 2">
+      <a-animation attribute="position" to="-5 3 -10" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+    </a-box>
+    <!-- <a-entity>
+      <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true" color="#FFF"></a-cylinder>
+    </a-entity> -->
+    <a-sphere position="5 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <!-- <a-sphere position="5 1.25 -5" radius="1.25" scale="2 2 2" src="#earthSurface"></a-sphere> -->
+    <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+    <!-- <a-circle color="#CCC" radius="20"  position="0 2 -5" rotation="0 45 45" scale="0.1 0.1 0.1"></a-circle> -->
+    <!-- <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-3 -2 -9" scale="0.05 0.05 0.05"></a-entity> -->
+    <!-- <a-obj-model src="#shoe-obj" mtl="#shoe-mtl" position="-5 0 -2" rotation="0 30 0" scale="0.1 0.1 0.1">
           <a-animation attribute="position" to="-5 2 -2" direction="alternate" dur="2000"
          repeat="indefinite"></a-animation>
         </a-obj-model> -->
-        <a-entity bmfont-text="text: Ganteng-ganteng Srigala :D" position="0 0 -5" rotation="0 0 0" scale="2 2 2"></a-entity>
-        <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8"
-                position="0 0.9 0" scale=".4 .4 .4">
-          <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750"
-                  dur="1000"></a-animation>
-        </a-curvedimage>
-      <a-sky src="#skyTexture"></a-sky>
-      <a-camera>
-        <a-cursor></a-cursor>
-      </a-camera>
-      
-    </a-scene>
-    <script>
-      var boxEl = document.querySelector('a-box')
-      boxEl.addEventListener('mouseenter', function () {
-        boxEl.setAttribute('scale', {x: 2, y: 2: z: 2});
+    <a-entity bmfont-text="text: Ganteng-ganteng Srigala :D" position="0 0 -5" rotation="0 0 0" scale="2 2 2"></a-entity>
+    <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8" position="0 0.9 0" scale=".4 .4 .4">
+      <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750" dur="1000"></a-animation>
+    </a-curvedimage>
+    <a-sky src="#skyTexture"></a-sky>
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+
+  </a-scene>
+  <script>
+    var boxEl = document.querySelector('a-box')
+    boxEl.addEventListener('mouseenter', function() {
+      boxEl.setAttribute('scale', {
+        x: 2,
+        y: 2: z: 2
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
